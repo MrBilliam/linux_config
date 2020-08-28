@@ -1,0 +1,32 @@
+'.source.python':
+  'init':
+    'prefix': 'init'
+    'body': """
+      def __init__(self, ):
+        self.
+    """
+
+  'New Class':
+    'prefix': 'class'
+    'body': """
+      class ${1:ClassName}:
+          \"""Docstring for $1\"""
+          def __init__(self, ${2:arg}):
+              self.$2 = $2
+              $0
+          def __repr__(self):
+              return f'<$1 Obj >'
+
+
+      """
+
+  'Docstring':
+    'prefix': 'doc'
+    'body': """
+      \"""
+      Docstring for ${1:ClassName}
+
+      :param ${2:param}: \{${3:type}\} $4
+      $5
+      \"""
+    """

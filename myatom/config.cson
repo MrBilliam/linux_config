@@ -1,0 +1,27 @@
+"*":
+  "autocomplete-plus":
+    confirmCompletion: "tab"
+  "autocomplete-python":
+    useKite: false
+  core:
+    disabledPackages: [
+      "language-python"
+    ]
+    telemetryConsent: "no"
+    themes: [
+      "nucleus-dark-ui"
+      "one-dark-syntax"
+    ]
+  editor:
+    showInvisibles: true
+  "exception-reporting":
+    userId: "0c190f32-afec-4f71-8490-a255805d06c9"
+  "nord-atom-ui":
+    darkerFormFocusEffect: true
+    tabSizing: false
+  "status-bar": {}
+  tabs:
+    addNewTabsAtEnd: true
+    alwaysShowTabBar: false
+  welcome:
+    showOnStartup: false
