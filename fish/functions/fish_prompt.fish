@@ -40,7 +40,7 @@ function fish_prompt --description 'Write out the prompt'
     or set -lx fish_prompt_pwd_dir_length 0
 
     set_color -b normal
-    printf '%s%s%s%s%s%s%s%s%s%s%s%s%s' (set_color cyan) '♛' (set_color red) $USER (set_color cyan) '❙' (set_color FF00FF) '$ ' (set_color yellow) (prompt_pwd) (set_color white) $git_info (set_color white)
+    printf '%s%s%s%s%s%s%s%s%s%s%s%s%s' (set_color cyan) '> ' (set_color red) $USER (set_color cyan) '❙' (set_color red) '$ ' (set_color yellow) (prompt_pwd) (set_color white) $git_info (set_color white)
     if test $laststatus -eq 0
         printf "%s:>>%s " (set_color -o green) (set_color normal)
     else
